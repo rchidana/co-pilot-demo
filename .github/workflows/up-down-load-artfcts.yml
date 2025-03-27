@@ -22,7 +22,7 @@ jobs:
           cd ..
     
       - name: Step 3 - Use the Upload Artifact GitHub Action
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with: 
           name: assets-for-download
           path: downloads
@@ -33,7 +33,7 @@ jobs:
     steps:
 
       - name: Let us download artifact named assets-for-download
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: assets-for-download
 
